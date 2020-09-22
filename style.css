@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cccccc;
+}
+.navbar-style{
+    box-shadow: 0 4px 5px #cdcdcd;
+    text-transform: uppercase;
+}
+.navbar-style img{
+    height: 48px;
+    padding: 2px 10px;
+    border-radius: 50% 50%;
+}
+.navbar{
+    margin-bottom: 0px;
+    background: rgb(19 114 110)
+    /* background: linear-gradient(48deg, rgba(2,0,36,1) 0%, rgba(103,208,233,0.4366071239021254) 35%, rgba(0,212,255,1) 100%);   */
+}
+.nav li a{
+    color: #fff;
+}
+.nav li{
+    list-style: none;
+}
+.nav li a:hover{
+    background-color: lightblue;
+}
+.icon-bar{
+    background-color: #333333;
+}
+.header-pageTop{
+    background: rgb(2,0,36);
+    background: linear-gradient(48deg, rgba(2,0,36,1) 0%, rgba(103,208,233,0.4366071239021254) 35%, rgba(0,212,255,1) 100%);
+    padding-bottom: 50px;
+}
+.headerPage{
+    margin-top: 3%;
+}
+.header-first h2{
+    animation: moveHead .1s;
+}
+@keyframes moveHead{
+   0%{
+       transform: translateX(-20px);
+       opacity: 0;
+   }
+    100%{
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+.header-first h1{
+    color: orangered;
+    margin: 20px 0px;
+    font-size: 34px;
+    box-shadow: 0px -1px 6px red;
+    text-align: center;
+    animation: moveHeading .5s;
+}
+@keyframes moveHeading{
+   0%{
+       transform: translateY(-20px);
+       opacity: 0;
+   }
+    100%{
+       transform: translateY(0px);
+       opacity: 1;
+   }
+}
+.header-first p{
+    color: #f3f3f3;
+    margin-bottom: 20px;
+    animation: movePara .1s;
+}
+@keyframes movePara{
+   0%{
+       transform: translateX(-20px);
+       opacity: 0;
+   }
+    100%{
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+
+.btn-first, .btn-second{
+    padding: 5px 25px;
+    color: #ffffff;
+    background-color: orange;
+    animation: moveBtn .1s;
+}
+@keyframes moveBtn{
+   0%{
+       transform: translateY(-20px);
+       opacity: 0;
+   }
+    100%{
+       transform: translateY(0px);
+       opacity: 1;
+   }
+}
+
+.btn-first{
+    margin-right: 20px;
+}
+.btn-first:hover {
+    box-shadow: 0 2px 5px lightgray;
+}
+.btn-second:hover{
+    background-color: white;
+    box-shadow: 0 2px 5px lightgray;
+    transition: .3s;
+}
+.header-sideImg img{
+    border-radius: 5px;
+    border: 5px solid lightblue;
+    animation: moveImg .5s;
+}
+@keyframes moveImg{
+   0%{
+       transform: translateX(20px);
+       opacity: 0;
+   }
+    100%{
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+
+.section{
+    padding: 50px 0px;
+
+}
+.about h2{
+    color:orange;
+    font-weight: 700;
+    text-shadow: 1px 3px 4px blue;
+}
+.line-bar{
+    height: 3px;
+    width: 70px;
+    background-color: orange;
+    margin: auto;
+}
+.about p:last-child{
+    padding: 30px 100px;
+
+}
+.about-staff>div:last-child img{
+    /* height: 100vh; */
+    /* width: -webkit-fill-available; */
+    margin: auto;
+}
+.about-staff>div:last-child img:hover{
+    box-shadow: 0px 5px 10px #1d5f6e;
+    transform: translateY(-10px);
+    transition: all .3s ease-in-out;
+}
+.about-staff>div:first-child img{
+    /* height: 100vh; */
+    margin: auto;
+}
+.about-staff>div:first-child img:hover{
+    box-shadow: 0px 5px 10px #1d5f6e;
+    transform: translateY(-10px);
+    transition: all .3s ease-in-out;
+}
+.feature{
+    /* background-color: #f3f3f3; */
+    background: rgb(2,0,36);
+background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.5701474965729328) 35%, rgba(0,212,255,1) 100%);
+}
+.feature h3{
+    color: orange;
+}
+.front p{
+    color: rgb(55, 124, 245);
+}
+.front img{
+    /* height: 100vh; */
+    width: 100%;
+}
+.featureDiv1:hover img{
+	opacity:.3;
+}
+.featureDiv1:hover{
+    transform: translateY(-10px);
+    transition: all .3s ease-in-out;
+}
+.featureDiv1:hover .back{
+    display: block;
+    animation: moveInfo .3s;
+}
+@keyframes moveInfo{
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: .3;
+    }
+}
+.front{
+    position: relative;
+    padding: 0;
+}
+.back{
+    position: absolute;
+    display: none;
+    left: 12px;
+    top: 10%;
+    left: 12%;
+}
+.back p{
+    color: red;
+    width: 250px;
+}
+.featureBtn{
+    color: black;
+    background-color: orange;
+    padding: 5px 25px;
+    box-shadow: 0 0px 4px 1px blue;
+}
+
+.clientSay{
+    background-color: #191717;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.clientSay img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid orange;
+
+}
+.clientSay p{
+    position: relative;
+    font-size: 12px;
+    top: 0;
+    left: 25%;
+
+}
+.clientSay span{
+    font-size: 8px;
+    position: absolute;
+    left: 6%;
+    bottom: 5%;
+    text-align: center;
+}
+.clientBox>div>div{
+
+}
+.clientBox>div>div:last-child{
+    margin-right: 0px;
+}
+.clientBox{
+    padding-bottom: 30px;
+}
+.nav-tabs{
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+.eventGallary>div>div:last-child{
+    margin-top: 6%;
+}
+.nav-tabs{
+    background-color: orange;
+    display: inline-block;
+    border-radius: 5px;
+}
+.footer{
+    background-color: #000000;
+}
+.footer-left{
+    color: #fff;
+
+}
+.footer-right i{
+ text-align: center;
+ margin-top: 18px;
+ font-size: 20px;
+}
+.footer-right a{
+    margin-left: 30px;
+    color: white;
+}
+
+
+@media all and (max-width:768px){
+    .headerPage{
+        text-align: center;
+    }
+    .header-sideImg{
+        padding-top: 10%;
+    }
+     .feature-key>div{
+      margin-top: 10%;
+  }
+  .clientBox>div>div:last-child{
+      margin-left: 25%;
+  } 
+
+}
+@media all and (max-width:997px) and (min-width:320px){
+   .back{
+      line-height: 1;
+      text-align: center;
+      top: 35%;
+      left: 35%;
+      margin-bottom: 10px;
+  }
+}
+@media all and (max-width:360px){
+      .back{
+      line-height: 1;
+      text-align: center;
+      top: 18%;
+      left: 18%;
+      margin-bottom: 10px;
+    } 
+    .btn-first{
+        margin-right: 10px;
+    }
+   .clientBox>div>div:last-child{
+      margin-left: 0;
+    }
+}
